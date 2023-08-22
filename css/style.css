@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* reseting the initial values */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #0162be;
+}
+
+#home {
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    margin-right: 7rem;
+    margin-left: 7rem;
+    height: 100%;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 19px;
+}
+
+nav img {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    height: 70%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section .left-side h2 {
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+section .left-side h2 span {
+    font-size: 70px;
+}
+
+section .left-side p {
+    width: 60%;
+    line-height: 1.7;
+    word-spacing: 2px;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+section .left-side a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #1D1782;
+    padding: 8px 23px;
+    font-weight: 700;
+    border-radius: 30px;
+    word-spacing: 2px;
+
+}
+
+section .left-side a:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+section .right-side {
+    display: flex;
+    align-items: center;
+}
+
+section .icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 95px;
+    animation: main-icons 2s ease-out;
+}
+
+@keyframes main-icons {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+section .icons i {
+    color: #fff;
+    font-size: 21.7px;
+    margin-bottom: 15px;
+}
+
+section img {
+    width: 245px;
+    animation: main-pepsi 1s ease-out;
+}
+
+@keyframes main-pepsi {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#home .alltypes {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    list-style: none;
+    animation: main-list 3s ease-out;
+}
+
+@keyframes main-list {
+    from {
+        bottom: -120px;
+    }
+
+    to {
+        bottom: 20px;
+    }
+}
+
+#home .alltypes li {
+    transition: transform .5s;
+}
+
+#home .alltypes li:hover {
+    transform: translateY(-10px);
+}
+
+#home .alltypes li:not(:last-child) img {
+    width: 110px;
+}
+
+#home .alltypes img:last-child {
+    width: 60px;
+}
+
+@media (max-width:1185px) {
+
+    .container {
+        margin: 0 2rem;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        flex-direction: column;
+    }
+
+    nav img {
+        margin-bottom: 20px;
+    }
+
+    nav li {
+        margin-left: 25px;
+    }
+
+    .landing-content {
+        flex-direction: column;
+        padding: 2rem 0 0;
+    }
+
+    section .left-side {
+        margin-bottom: 80px;
+    }
+
+    section .right-side {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    section .left-side p {
+        width: 100%;
+    }
+
+    section img {
+        width: 200px;
+    }
+
+    section .icons {
+        flex-direction: row;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    section .icons i {
+        margin-left: 10px;
+    }
+
+    #home .alltypes {
+        bottom: -500px;
+    }
+
+    @keyframes main-list {
+        from {
+            bottom: -120px;
+        }
+
+        to {
+            bottom: -500px;
+        }
+    }
+}

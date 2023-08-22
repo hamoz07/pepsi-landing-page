@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPSI Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="home">
+        <div class="container">
+            <nav>
+                <img src="imgs/pepsi_logo.png" alt="pepsi logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">what's new</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <section class="landing-content">
+                <div class="left-side">
+                    <h2>That's What <br><span>I Like</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio adipisci modi, ducimus
+                        quisquam optio eum molestias ut quis perferendis doloremque voluptatibus quaerat, corrupti id
+                        ipsum at accusamus rerum exercitationem!</p>
+                    <a href="#">VIEW ALL PRODUCTS</a>
+                </div>
+                <div class="right-side">
+                    <img src="imgs/pepsi_can.png"  id="main-pepsi" alt="">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+            <ul class="alltypes">
+                <li><img src="imgs/diet.png" onclick="switchIMGS('imgs/diet.png')" alt="pepsi types"></li>
+                <li><img src="imgs/zero-sugar.png" onclick="switchIMGS('imgs/zero-sugar.png')" alt="pepsi types"></li>
+                <li><img src="imgs/pepsi_can.png" onclick="switchIMGS('imgs/pepsi_can.png')" alt="pepsi types"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/pepsi.js"></script>
+</body>
+
+</html>
