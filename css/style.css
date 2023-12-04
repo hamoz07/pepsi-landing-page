@@ -133,6 +133,7 @@ section .icons i {
 
 section img {
     width: 245px;
+    height:350px;
     animation: main-pepsi 1s ease-out;
 }
 
@@ -238,7 +239,7 @@ section img {
     }
 
     #home .alltypes {
-        bottom: -500px;
+        bottom: -550px;
     }
 
     @keyframes main-list {
